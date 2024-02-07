@@ -39,8 +39,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/058suke/docs/edit/main/',
-          routeBasePath:
-            '/',
+          routeBasePath: '/',
         },
         blog: false,
         theme: {
