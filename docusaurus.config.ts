@@ -3,27 +3,16 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: '058Docs',
+  title: 'Docs(058)',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://docs.058suke.work/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ja',
     locales: ['ja'],
@@ -35,10 +24,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/058suke/docs/edit/main/',
+          editUrl: 'https://github.com/058suke/docs/edit/main/',
           routeBasePath: '/',
         },
         blog: false,
@@ -53,19 +39,28 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Docs(058)',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Docs(058) logo',
         src: 'img/logo.svg',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
+          label: 'Docs',
           position: 'left',
-          label: 'Tutorial',
         },
-        {to: 'https://058suke.work/', label: 'Blog', position: 'left'},
+        {
+          to: 'https://058suke.work/about', 
+          label: 'About', 
+          position: 'left'
+        },
+        {
+          to: 'https://058suke.work/', 
+          label: 'Blog', 
+          position: 'left'
+        },
         {
           href: 'https://github.com/058suke',
           label: 'GitHub',
